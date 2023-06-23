@@ -16,7 +16,7 @@
 .mainheading{
     font-family: "Metal Mania";
     text-align: center;
-    padding: 20px;
+    
     font-size: 30px;
 }
 
@@ -31,7 +31,17 @@
     height: 250px;
     width: 250px;
     overflow: hidden;
+     /* Add desired styling for the image */
+
+  /* Set initial scale value */
+  transform: scale(1);
+  transition: transform 0.3s ease;
 }
+.images:hover {
+    /* Apply zoom effect on hover */
+    transform: scale(1.1);
+    
+  }
 
 .btn{
     cursor: pointer;
@@ -51,12 +61,12 @@
     justify-content: space-between;
 }
 
-.toppest{
-    display: flex;
+.toppest{   
     flex-wrap: wrap;
     justify-content: space-around;
     display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-template-columns: repeat(3, 1fr); /* Two columns with equal width */
   gap: 0px; /* Gap between items */
+ 
   
 }
