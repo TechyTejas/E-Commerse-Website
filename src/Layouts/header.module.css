@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    padding: 22px;
+    font-size: 25px;
+    font-weight: 200;
+    justify-content: center;
+    list-style-type: none;
+    border-bottom: 0.1rem solid white;
+    position: fixed;
+    top: 0%;
+    background: black;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .icon {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0px 30px ;
+  }
+  
+  .boxx{
+    padding: 40px;
+    font-size: 100px;
+    text-align:center;
+  }
+
+  .headerr{
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+    padding-bottom: 30px;
+    background: #777;
+    color: white;
+}
+  
