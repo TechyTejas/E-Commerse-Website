@@ -1,8 +1,22 @@
 import React from 'react'
 import classes from './Store.module.css'
+import ListItemForm from './ListItemForm';
+import { useContext } from 'react';
+import CartContext from './Store/cart-context';
 
 function ListItem(props) {
     const url=props.url;
+    const cartCtx = useContext(CartContext)
+    
+    const addToCartHandler = amount =>{
+      cartCtx.addItem({
+        id:props.id,
+        title:props.title,
+        amount:amount,
+        price:props.price
+      })
+    }
+    
      
   return (
    
@@ -14,7 +28,7 @@ function ListItem(props) {
             </div>
             <div className={classes.prodprice}>
               <span>{props.price}$</span>
-              <button className={classes.btn}>Add to Cart</button>
+              <span className={classes.btn}><ListItemForm onAddToCart={addToCartHandler}/></span>
             </div>
           </div>
         </div>

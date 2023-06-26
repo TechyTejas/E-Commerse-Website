@@ -11,6 +11,8 @@
     background: black;
     width: 100%;
     z-index: 1;
+
+    
   }
 
   .icon {
@@ -32,5 +34,5 @@
     padding-bottom: 30px;
     background: #777;
     color: white;
+    justify-content: space-between;
 }
-  
