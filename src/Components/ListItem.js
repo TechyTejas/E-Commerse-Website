@@ -4,7 +4,10 @@ import ListItemForm from './ListItemForm';
 import { useContext } from 'react';
 import CartContext from './Store/cart-context';
 
-function ListItem(props) {
+
+
+
+ function ListItem (props) {
     const url=props.url;
     const cartCtx = useContext(CartContext)
     
@@ -16,8 +19,8 @@ function ListItem(props) {
         price:props.price
       })
     }
-    
-     
+  
+
   return (
    
         <div className={classes.master}>
@@ -27,7 +30,7 @@ function ListItem(props) {
             <img src={url} className={classes.images} alt={props.url} />
             </div>
             <div className={classes.prodprice}>
-              <span>{props.price}$</span>
+              <span>{props.price}$</span> 
               <span className={classes.btn}><ListItemForm onAddToCart={addToCartHandler}/></span>
             </div>
           </div>

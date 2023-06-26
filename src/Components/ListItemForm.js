@@ -16,11 +16,7 @@ function ListItemForm(props) {
     label="Quantity" 
     input={{
         id:'amount',
-        type:'number',
-        // min:'1',
-        // max:'5',
-        // step:'1',
-        // defaultValue:'1'
+        type:'number'
     }}/>
     <button >Add to Cart</button>
     </form>
