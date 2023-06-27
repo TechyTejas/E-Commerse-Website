@@ -9,12 +9,12 @@ const CartItem = (props) => {
         <h2>{props.title}</h2>
         <div >
           <span>{price}</span>
-         {/* / <span>x {props.amount}</span> */}
+          <span>x {props.amount}</span>
         </div>
       </div>
       <div>
-        <button onClick={props.onRemove}>−</button>
-        <button onClick={props.onAdd}>+</button>
+        {/* <button onClick={props.onRemove}>−</button>
+        <button onClick={props.onAdd}>+</button> */}
       </div>
     </li>
   );

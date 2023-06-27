@@ -5,7 +5,8 @@ import CartItem from './CartItem'
 
 function Cart(props) {
   const cartCtx = useContext(CartContext)
-  // console.log(cartCtx,"from cart")
+  //  console.log(cartCtx,"from cart")
+  console.log(CartContext)
 
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`
   const hasItems = cartCtx.items.length>0
@@ -21,16 +22,18 @@ function Cart(props) {
   const cartItems =
   <ul>
     {cartCtx.items.map((item) => (
-     
+
     <CartItem 
     key={item.id} 
     title={item.title} 
     amount={item.amount} 
     price={item.price}
     onRemove={cartItemRemoveHandler.bind(null,item.id)}
-    onAdd={cartItemAddHandler.bind(null,item)}/>
+    onAdd={cartItemAddHandler.bind(null,item)}
+    />
     ))}
     </ul>
+     
 
   return (
     <Modal onClose={props.onClose}>

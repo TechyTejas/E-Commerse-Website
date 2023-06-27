@@ -5,6 +5,7 @@ import classes from './Store.module.css'
 
 const cartElements = [
   {
+    id:"m1",
     title: "Colors",
     price: 100,
     imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%201.png",
@@ -12,6 +13,7 @@ const cartElements = [
   },
 
   {
+    id:"m2",
     title: "Black and white Colors",
     price: 50,
     imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%202.png",
@@ -19,6 +21,7 @@ const cartElements = [
   },
 
   {
+    id:"m3",
     title: "Yellow and Black Colors",
     price: 70,
     imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%203.png",
@@ -36,6 +39,7 @@ function Store() {
       price={item.price}
     />
   ));
+   
   return (
     <Card>
       <section>

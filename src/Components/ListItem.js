@@ -11,7 +11,7 @@ import CartContext from './Store/cart-context';
     const url=props.url;
     const cartCtx = useContext(CartContext)
     
-    const addToCartHandler = amount =>{
+    const addToCartHandler = amount =>{  //amount refer tto quantity
       cartCtx.addItem({
         id:props.id,
         title:props.title,
