@@ -2,11 +2,12 @@ import React,{useRef} from 'react'
 import Input from './UI/Input'
 
 function ListItemForm(props) {
-    const amountInputRef = useRef(1)
+    const amountInputRef = useRef("1")
+    const enteredAmountNumber= +amountInputRef;
 
     const submitHandler = (event) =>{
         event.preventDefault();
-        props.onAddToCart(amountInputRef);
+        props.onAddToCart(enteredAmountNumber);
     }
   
   return (
@@ -18,7 +19,7 @@ function ListItemForm(props) {
         id:'amount',
         type:'number'
     }}/>
-    <button >Add to Cart</button>
+    <button>Add to Cart</button>
     </form>
   )
 }

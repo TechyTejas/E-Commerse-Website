@@ -8,17 +8,17 @@ const defaultState = {
 
 
 const cartReducer = (state, action) =>{
-    console.log(state ,action)
-    
+    console.log(state)
+  
         if(action.type === 'ADD'){
            
             const updatedTotalAmount= 
-            state.totalAmount + action.item.price * action.item.amount;  //here amount refer to quantity
-    
+            state.totalAmount + action.item.price    //here amount refer to quantity
+
             const existingCartItemIndex = state.items.findIndex(
                 (item) => item.id === action.item.id       
             )
-          
+            // console.log(action.item.id)
     
             const existingCartItem = state.items[existingCartItemIndex];
            
@@ -27,13 +27,14 @@ const cartReducer = (state, action) =>{
             if(existingCartItem){
              const updatedItem ={
                     ...existingCartItem,
-                    amount: existingCartItem.amount + action.item.amount
+                    amount: existingCartItem.amount + 1
                 };
                 updatedItems = [...state.items];
                 updatedItems[existingCartItemIndex] = updatedItem;
             }else{
                 updatedItems= state.items.concat(action.item)
             }
+            // console.log(action.item)
            
             return {
                 items:updatedItems,
@@ -66,6 +67,7 @@ const cartReducer = (state, action) =>{
 }
 
 
+//Main function is from here
 
 function CartProvider(props) {
     const[cartState, dispatchCartAction] = useReducer(cartReducer, defaultState)
@@ -73,6 +75,7 @@ function CartProvider(props) {
     const addItemHandler = (item) =>{
           dispatchCartAction({type:'ADD',item:item})
     }
+    
 
     const removeItemHandler = (id) =>{
           dispatchCartAction({type:'REMOVE',id:id})
@@ -84,6 +87,7 @@ function CartProvider(props) {
         addItem: addItemHandler,
         removeItem: removeItemHandler
     }
+
   return (
     <CartContext.Provider value={cartContext}>
         {props.children}
