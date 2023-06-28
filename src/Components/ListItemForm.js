@@ -1,19 +1,16 @@
-import React,{useRef} from 'react'
+import React  from 'react'
 import Input from './UI/Input'
 
 function ListItemForm(props) {
-    const amountInputRef = useRef("1")
-    const enteredAmountNumber= +amountInputRef;
-
+    const number=1;
     const submitHandler = (event) =>{
         event.preventDefault();
-        props.onAddToCart(enteredAmountNumber);
+        props.onAddToCart(number);
     }
-  
+
   return (
     <form onSubmit={submitHandler}>
     <Input   
-     ref={amountInputRef}
     label="Quantity" 
     input={{
         id:'amount',

@@ -12,6 +12,7 @@ import CartContext from './Store/cart-context';
     const cartCtx = useContext(CartContext)
     
     const addToCartHandler = amount =>{  //amount refer tto quantity
+      console.log(amount)
       cartCtx.addItem({
         id:props.id,
         title:props.title,

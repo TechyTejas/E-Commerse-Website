@@ -8,8 +8,8 @@ const defaultState = {
 
 
 const cartReducer = (state, action) =>{
+    // console.log(action)
     console.log(state)
-  
         if(action.type === 'ADD'){
            
             const updatedTotalAmount= 
@@ -19,7 +19,6 @@ const cartReducer = (state, action) =>{
                 (item) => item.id === action.item.id       
             )
             // console.log(action.item.id)
-    
             const existingCartItem = state.items[existingCartItemIndex];
            
             let updatedItems;
@@ -34,12 +33,13 @@ const cartReducer = (state, action) =>{
             }else{
                 updatedItems= state.items.concat(action.item)
             }
-            // console.log(action.item)
-           
+            // console.log(action.item)  
+            // console.log(updatedItems) 
             return {
                 items:updatedItems,
                 totalAmount:updatedTotalAmount
             }     
+           
         }
 
         if(action.type=== 'REMOVE'){
@@ -47,6 +47,7 @@ const cartReducer = (state, action) =>{
                 (item) => item.id === action.id
             )
             const existingItem = state.items[existingCartItemIndex]
+            // console.log(existingCartItemIndex+"hii tejas")
             const updatedTotalAmount = state.totalAmount - existingItem.price
             
             let updatedItems;
