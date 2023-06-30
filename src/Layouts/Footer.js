@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './footer.module.css'
 
 function Footer() {
+ 
   return (
     <footer className={classes.footer}>
     <div className={classes.footer2}> Our Generics </div>

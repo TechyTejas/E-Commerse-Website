@@ -1,0 +1,17 @@
+.maindiv{
+    margin: 12rem;
+    border: 1px solid #110f0f; /* Adjust the border color and width as desired */
+    padding: 20px; /* Adjust the padding as desired */
+    border-radius: 5px;
+}
+
+
+.input{
+    width:450px;
+    border-radius: 5px;
+}
+
+.submit{
+     margin-top: 20px;
+     border-radius: 5px;
+}
