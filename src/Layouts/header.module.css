@@ -1,16 +1,26 @@
 .header {
     display: flex;
-    padding: 22px;
-    font-size: 25px;
-    font-weight: 200;
-    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    /* font-weight: 200; */
+    justify-content: space-between;
     list-style-type: none;
     border-bottom: 0.1rem solid white;
     position: fixed;
     top: 0%;
-    background: black;
+    background: rgb(233, 56, 56);
     width: 100%;
-    z-index: 1; 
+    z-index: 1;  
+  }
+
+  .headerdiv{
+    display: flex; 
+    /* margin-left: 200px; */
+  }
+
+  .btnn{
+    margin-right: 50px;
+    display: flex;
   }
 
   .icon {
@@ -25,12 +35,7 @@
     text-align:center;
   }
 
-  /* .headerr{
-    text-align: center;
-    margin: 0;
-    padding: 0px;
-    padding-bottom: 30px;
-    background: #777;
-    color: white;
-    justify-content: space-between;
-} */
+  .comp{
+     font-size: 23px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }

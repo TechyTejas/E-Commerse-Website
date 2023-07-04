@@ -2,13 +2,16 @@
     max-width: 900px;
     margin: 0 auto;
     font-size: 22px;
+   
 }
 
 .heading{
     font-family: "Metal Mania";
     text-align: center;
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 30px;
+    margin-top:70px;
+    
 }
 
 .inner{
@@ -29,4 +32,20 @@
     font-size: 17px;
     margin: 20px;
     color: #777;
+}
+
+.section{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.gridimg{
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }

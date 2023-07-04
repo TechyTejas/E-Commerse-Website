@@ -1,5 +1,6 @@
-// import React,{useContext} from 'react'
-// import CartContext from '../Components/Store/cart-context' 
+import React,{useContext} from 'react'
+import classes from './HeaderCartBtn.module.css'
+import CartContext from '../Components/Store/cart-context' 
 
 
 function HeaderCartBTn(props) {
@@ -11,7 +12,7 @@ function HeaderCartBTn(props) {
   // })
   return (
     <div>
-        <button onClick={props.onClick}>
+        <button onClick={props.onClick} className={classes.button}>
             <span>Your Cart</span>
             {/* <span> {numberofItems}</span> */}
         </button>

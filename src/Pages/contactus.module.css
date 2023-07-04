@@ -1,8 +1,11 @@
 .maindiv{
-    margin: 12rem;
-    border: 1px solid #110f0f; /* Adjust the border color and width as desired */
-    padding: 20px; /* Adjust the padding as desired */
+    margin: 9rem 9rem 10rem;
+    /* border: 1px solid #110f0f;  */
+    /* Adjust the border color and width as desired */
+    padding: 0px 10px 10px 100px; 
+    /* Adjust the padding as desired */
     border-radius: 5px;
+    align-items: right;
 }
 
 
@@ -11,7 +14,28 @@
     border-radius: 5px;
 }
 
+.inputt{
+    width:450px;
+    border-radius: 5px;
+    height:40px;
+}
+
 .submit{
      margin-top: 20px;
      border-radius: 5px;
 }
+
+.griddiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; /* Adjust the grid gap value as desired */
+}
+
+.para{
+
+    /* border: 1px solid #110f0f; */
+    margin-bottom: 149px;
+    margin-top: 142px;
+    margin-left: 8rem;
+}
+  

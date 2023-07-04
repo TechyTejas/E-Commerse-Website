@@ -30,6 +30,15 @@ function ContactUs() {
     }
 
   return (
+    <div className={classes.griddiv}>
+        <div className={classes.para}>
+            <h3>Don't be a stranger!</h3>
+            <h1>You tell us. We listen.</h1>
+            <p>Cras elementum finibus lacus nec lacinia. Quisque non convallis nisl,
+             eu condimentum sem. Proin dignissim libero lacus, ut eleifend magna 
+             vehicula et. Nam mattis est sed tellus.</p>
+        </div>
+
     <div className={classes.maindiv}>
         <lable><h2>Contact us </h2></lable>
          <form onSubmit={FormSubmitHandler}>
@@ -55,9 +64,17 @@ function ContactUs() {
         </div>
 
         <div>
+            <label>Message</label>
+            <br/>
+            <input type="text" className={classes.inputt}  ></input> 
+            <br/>
+        </div>
+
+        <div>
             <button type="submit" className={classes.submit}>Submit</button>
         </div>   
     </form>
+    </div>
     </div>
    
   )

@@ -24,7 +24,6 @@ function App() {
     <CartProvider>
     
     {cartIsShown &&  <Cart onClose={HideCartHandler}/>}
-    <h1>The Generics</h1>
     <Route/>
     <Header onClick={ShowCartHandler}/>
     <Footer/>
