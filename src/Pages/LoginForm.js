@@ -25,6 +25,10 @@ const LoginForm = () => {
     const enteredEmail = emailInputRef.current.value;
     const enteredPassword = passwordInputRef.current.value;
      console.log(enteredEmail, enteredPassword);
+
+      //we pass email from here it is hard coded
+    localStorage.setItem("email",enteredEmail)
+    
     setIsLoading(true)
     let url;
     if (isLogin) {
