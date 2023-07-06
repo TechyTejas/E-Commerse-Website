@@ -17,7 +17,7 @@ function Header(props) {
   <React.Fragment>
      
       <ui className={classes.header}>
-      <li className={classes.comp}>E-COMMERSE</li>
+      <li className={classes.comp}> ShipCart.Com </li>
 
       <div className={classes.headerdiv}>
       <li><Link to='/' className={classes.icon}>Home</Link></li>
@@ -28,8 +28,8 @@ function Header(props) {
       </div>
 
       <div className={classes.btnn}>
-      <HeaderCartBTn onClick={props.onClick} />
-      {isLoggedIn && ( <button  onClick={logoutHandler}>Logout</button> )}
+      {isLoggedIn && <HeaderCartBTn onClick={props.onClick} />}
+      {isLoggedIn && ( <button className={classes.logout} onClick={logoutHandler}>Logout</button> )}
       </div>
       </ui>
       

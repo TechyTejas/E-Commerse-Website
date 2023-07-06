@@ -20,10 +20,20 @@
     height:40px;
 }
 
-.submit{
-     margin-top: 20px;
-     border-radius: 5px;
-}
+.button{
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color:#ef7979;
+    color: white;
+    border-color: #ef7979;
+    margin-right: 10px;
+  }
+  
+  .button:hover{
+    background-color:  rgb(119, 189, 236);
+    color: black;
+    border-color:  rgb(119, 189, 236);
+  }
 
 .griddiv {
     display: grid;

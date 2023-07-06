@@ -5,7 +5,7 @@ function About() {
   return (
     <React.Fragment>
       <div className={classes.about}>
-        <h2 className={classes.heading}>About</h2>
+        <h2 className={classes.heading}>About us</h2>
         <div className={classes.inner}>
           <img
             src="https://www.angularminds.com/site_data/images/ecommerce-development/ecommerce-bg.png"
@@ -36,52 +36,59 @@ function About() {
           </p>
         </div>
       </div>
+      <h1 style={{ textAlign: "center", paddingTop: "50px" }}>WHY CHOOSE US...</h1>
+
 
       <section className={classes.section}>
-        <div>
-          <img
-            src=" https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/globe-free-img.png"
-            className={classes.gridimg}
-          ></img>
-          <h3>Worldwide Shipping</h3>
-          <p>
-            It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
-        </div>
+  <div>
+    <img
+      src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/globe-free-img.png"
+      className={classes.gridimg}
+      alt="Worldwide Shipping"
+    />
+    <h3>Worldwide Shipping</h3>
+    <p>
+      Fast and reliable shipping services available worldwide.
+    </p>
+  </div>
 
-        <div>
-          <img
-            src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/quality-free-img.png"
-            className={classes.gridimg}
-          ></img>
-          <h3>Best Quality</h3>
-          <p>
-            It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
-        </div>
+  <div>
+    <img
+      src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/quality-free-img.png"
+      className={classes.gridimg}
+      alt="Best Quality"
+    />
+    <h3>Best Quality</h3>
+    <p>
+      High-quality products crafted with attention to detail.
+    </p>
+  </div>
 
-        <div>
-          <img
-            src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/tag-free-img.png"
-            className={classes.gridimg}
-          ></img>
-          <h3>Best Offers</h3>
-          <p>
-            It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
-        </div>
+  <div>
+    <img
+      src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/tag-free-img.png"
+      className={classes.gridimg}
+      alt="Best Offers"
+    />
+    <h3>Best Offers</h3>
+    <p>
+      Exciting discounts and exclusive offers available for a limited time.
+    </p>
+  </div>
 
-        <div>
-          <img
-            src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/lock-free-img.png"
-            className={classes.gridimg}
-          ></img>
-          <h3>Secure Payments</h3>
-          <p>
-            It elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
-        </div>
-      </section>
+  <div>
+    <img
+      src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/lock-free-img.png"
+      className={classes.gridimg}
+      alt="Secure Payments"
+    />
+    <h3>Secure Payments</h3>
+    <p>
+      Secure payment options to ensure your transactions are protected.
+    </p>
+  </div>
+</section>
+
     </React.Fragment>
   );
 }

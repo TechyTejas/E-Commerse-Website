@@ -1,23 +1,28 @@
-
+import React from "react";
+import classes from './Cart.module.css'
 
 const CartItem = (props) => {
   const price = `₹${props.price.toFixed(2)}`;
    
 
   return (
-    <li >
-      <div>
+    <React.Fragment>
+
+      
         <h2>{props.title}</h2>
         {/* <div > */}
-          <span>{price}</span>
+        {/* <img src={props.image} style={{ height: '100px' }} /> */}
           {/* <span> X {props.amount}</span> */}
         {/* </div> */}
-      </div>
-      <div>
-        <button onClick={props.onRemove}>Remove</button>
+        <img src={props.image} style={{ height: '100px' }} />
+
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div>{price}</div>
+        <button onClick={props.onRemove} style={{ marginLeft: '20px' }} className={classes.button}>Remove</button>
+
         {/* <button onClick={props.onAdd}>+</button> */}
-      </div>
-    </li>
+        </div>
+    </React.Fragment>
   );
 };
 

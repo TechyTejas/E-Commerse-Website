@@ -34,9 +34,7 @@ function ContactUs() {
         <div className={classes.para}>
             <h3>Don't be a stranger!</h3>
             <h1>You tell us. We listen.</h1>
-            <p>Cras elementum finibus lacus nec lacinia. Quisque non convallis nisl,
-             eu condimentum sem. Proin dignissim libero lacus, ut eleifend magna 
-             vehicula et. Nam mattis est sed tellus.</p>
+            <p>You tell us, we listen. Your feedback fuels our growth. Together, we shape remarkable experiences. Let's build a brighter future, hand in hand.</p>
         </div>
 
     <div className={classes.maindiv}>
@@ -71,7 +69,7 @@ function ContactUs() {
         </div>
 
         <div>
-            <button type="submit" className={classes.submit}>Submit</button>
+            <button type="submit" className={classes.button}>Submit</button>
         </div>   
     </form>
     </div>

@@ -3,4 +3,25 @@
     height: 100px;
     background-color: #ccc;
     border: 1px solid #000;
-  }
+}
+
+.button{
+  background-color:#ef7979;
+  color: white;
+  border-color: #ef7979;
+  margin-right: 10px;
+}
+
+.button:hover{
+  background-color:  rgb(119, 189, 236);
+  color: black;
+  border-color:  rgb(119, 189, 236);
+}
+
+.scroll{
+  list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 20rem;
+    overflow: scroll;
+}

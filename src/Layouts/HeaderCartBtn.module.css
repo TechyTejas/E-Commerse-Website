@@ -1,5 +1,12 @@
 .button{
-    background-color: rgb(17, 236, 112);
-    border-radius: 10px;
-    padding: 2px;
+    background-color:  #ef7979;
+    /* border-radius: 10px; */
+    border-color: #ef7979;
+    color: white;
+    padding: 4px;
+}
+
+.button:hover{
+    color:black;
+    
 }

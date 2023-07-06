@@ -1,6 +1,6 @@
-import React,{useContext} from 'react'
+import React from 'react'
 import classes from './HeaderCartBtn.module.css'
-import CartContext from '../Components/Store/cart-context' 
+
 
 
 function HeaderCartBTn(props) {
@@ -11,12 +11,12 @@ function HeaderCartBTn(props) {
   //   return currNumber + item.amount;
   // })
   return (
-    <div>
+    <React.Fragment>
         <button onClick={props.onClick} className={classes.button}>
             <span>Your Cart</span>
             {/* <span> {numberofItems}</span> */}
         </button>
-    </div>
+    </React.Fragment>
   )
 }
 
