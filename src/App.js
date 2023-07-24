@@ -23,8 +23,7 @@ function App() {
   return (
     
      
-    <CartProvider>
-    
+    <CartProvider> 
     {cartIsShown &&  <Cart onClose={HideCartHandler}/>}
     <Route/>
     <Header onClick={ShowCartHandler}/>

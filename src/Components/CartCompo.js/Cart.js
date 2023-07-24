@@ -18,19 +18,19 @@ function Cart(props) {
   }, []);
 
   async function cartItemRemoveHandler(id) {
-    console.log(id, updatedEmail + " we are deleting the data");
+    // console.log(id, updatedEmail + " we are deleting the data");
     await axios.delete(
-      `https://crudcrud.com/api/cd8de9263555424aae79ab6c9312950e/${updatedEmail}/${id}`
+      `https://crudcrud.com/api/bdb85dc75976402689dc98426bf43956/${updatedEmail}/${id}`
     );
     await fetchCartItems();
   }
 
   async function fetchCartItems() {
     const response = await axios.get(
-      `https://crudcrud.com/api/cd8de9263555424aae79ab6c9312950e/${updatedEmail}`
+      `https://crudcrud.com/api/bdb85dc75976402689dc98426bf43956/${updatedEmail}`
     );
-    console.log(response.data);
-    console.log("tejas in server getting data");
+    // console.log(response.data);
+    // console.log("tejas in server getting data");
 
     const cartItems = response.data.map((item) => ({
       id: item._id,

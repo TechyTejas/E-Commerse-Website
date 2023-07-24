@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import classes from "./headpage.module.css";
+ 
+
 import Carousel from "react-bootstrap/Carousel";
 
 
@@ -15,8 +15,8 @@ function Headpage() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h2 style={{color:'black'}}>Trendy Men's Fashion</h2>
+          <p style={{color:'black'}}><h4> Discover the latest trends and styles in men's clothing, from casual wear to formal attire, and elevate your fashion game.</h4></p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -27,8 +27,9 @@ function Headpage() {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h2 style={{color:'black'}}>Cutting-Edge Electronics</h2>
+          <p style={{color:'black'}}>
+            <h4>Explore our wide range of cutting-edge electronics, including smartphones, laptops, gadgets, and accessories.</h4></p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -39,10 +40,10 @@ function Headpage() {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3 style={{color:'black'}}>Fashionable Women's Apparel</h3>
+          <p style={{color:'black'}}><h4>
+          Step into a world of fashion with our collection of women's clothing, featuring elegant dresses, stylish tops, comfortable activewear, and more.
+          </h4></p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

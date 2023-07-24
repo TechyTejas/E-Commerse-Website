@@ -26,6 +26,7 @@
     border-radius: 50%;
     width: 200px;
     height: 200px;
+   
 }
 
 .para{
@@ -48,4 +49,18 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
+    transition: transform 0.3s ease-in-out;
 }
+
+.gridimg:hover{
+    /* transform: rotate(180deg); */
+    animation: spin 2s infinite linear;
+}
+@keyframes spin {
+    from {
+      transform: rotate(0deg); /* Start rotation from 0 degrees */
+    }
+    to {
+      transform: rotate(360deg); /* End rotation at 360 degrees */
+    }
+  }

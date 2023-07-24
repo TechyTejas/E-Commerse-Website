@@ -5,7 +5,7 @@ function Footer() {
  
   return (
     <footer className={classes.footer}>
-    <div className={classes.footer2}> Our Generics </div>
+    <div className={classes.footer2}> Footer Part </div>
     <div className={classes.footericons}>
       <ui className={classes.footerIconsUL}>
         

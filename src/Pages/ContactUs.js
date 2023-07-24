@@ -21,8 +21,8 @@ function ContactUs() {
             body: JSON.stringify(details),
         })
 
-        const data=await response.json();
-        console.log(data);   //  checking weather data is goingto server or not 
+        // const data=await response.json();
+        // console.log(data);   //  checking weather data is goingto server or not 
 
         nameref.current.value="";
         emailref.current.value="";
