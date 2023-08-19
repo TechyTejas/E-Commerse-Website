@@ -8,6 +8,8 @@ import LoginForm from "../Pages/LoginForm";
 import AuthContext from "../LoginStore/Auth-context";
 import Store2 from "../Components/Store2";
 import Store3 from "../Components/Store3";
+import PrivacyPolicy from "../Pages/PrivacyPolicy";
+import TermCondition from "../Pages/Term&Condition";
 
 function Routee() {
   const authCtx = useContext(AuthContext);
@@ -38,6 +40,8 @@ function Routee() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<ContactUs />}></Route>
         <Route path="/login" element={<LoginForm />}></Route>
+        <Route path="/privacypolicy" element={<PrivacyPolicy/>}></Route>
+        <Route path="/term&condition" element={<TermCondition/>}></Route>
       </Routes>
     </React.Fragment>
   );

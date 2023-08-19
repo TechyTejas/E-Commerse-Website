@@ -20,14 +20,14 @@ function Cart(props) {
   async function cartItemRemoveHandler(id) {
     // console.log(id, updatedEmail + " we are deleting the data");
     await axios.delete(
-      `https://crudcrud.com/api/bdb85dc75976402689dc98426bf43956/${updatedEmail}/${id}`
+      `https://crudcrud.com/api/1adaed1845d2480d8213f45229566b6a/${updatedEmail}/${id}`
     );
     await fetchCartItems();
   }
 
   async function fetchCartItems() {
     const response = await axios.get(
-      `https://crudcrud.com/api/bdb85dc75976402689dc98426bf43956/${updatedEmail}`
+      `https://crudcrud.com/api/1adaed1845d2480d8213f45229566b6a/${updatedEmail}`
     );
     // console.log(response.data);
     // console.log("tejas in server getting data");

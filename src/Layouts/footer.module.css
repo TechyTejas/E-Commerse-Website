@@ -1,9 +1,9 @@
 
 .footer{
     display: flex;
-    /* margin-top: 40px; */
+    justify-content: space-around;
     padding: 20px;
-    background: #56CCF2;
+    background: rgb(119, 189, 236);
   }
   
   .footer2{
@@ -14,14 +14,7 @@
     font-weight: bold;
     margin: 0 auto;
   }
-  
-  .footericons{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
+    
   .footerIconsUL{
     list-style-type: none;
     display: flex;
@@ -38,6 +31,32 @@
       padding: 0;
   }
   
-  .imgg{
-    width: 30px;
+
+  .divstyle{
+    color: white;
+   text-align: center;
+  background-color: #474545;
+  }
+
+  .li{
+    list-style-type: none;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;  
+    color: white;
+    margin: 0px 30px ;
+    }
+
+  .lili{
+      text-decoration: none; 
+      color: white;
+  }
+
+  .lili:hover{
+    text-decoration: none; 
+    color: black;
+}
+
+  .li li:hover{
+    color: black;
   }
